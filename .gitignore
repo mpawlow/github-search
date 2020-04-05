@@ -1,0 +1,13 @@
+# Project files
+
+/github-search.sublime-workspace
+
+# Scripts
+
+/scripts/setup-environment.sh
+
+# Byte-compiled / optimized / DLL files
+
+__pycache__/
+*.py[cod]
+*$py.class
