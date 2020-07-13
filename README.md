@@ -24,6 +24,10 @@ optional arguments:
                         The target GitHub API domain. Default: github.ibm.com.
   -d, --debug           Enable debug mode. Default: False.
 
+=== Documentation ===
+
+https://docs.github.com/en/github/searching-for-information-on-github/searching-code
+
 === Environment Variables ===
 
 GITHUB_ACCESS_TOKEN : A personal access token with the "repo" scope selected.
@@ -32,5 +36,11 @@ GITHUB_ACCESS_TOKEN : A personal access token with the "repo" scope selected.
 
 export GITHUB_ACCESS_TOKEN=cabfe35410755fbb6c281e92902ed122144886c5
 
-python index.py -q "org:dap path:/ filename:package.json lodash"
+python index.py -q "org:dap path:/ filename:package.json request"
+python index.py -q "org:dap filename:deploy.properties k8s_yp_prod_eu_de_STAGE"
+python index.py -q "org:dap org:data-platform path:/ filename:package.json lodash"
 ```
+
+## (3) Documentation
+
+- [Searching code on GitHub](https://docs.github.com/en/github/searching-for-information-on-github/searching-code)
