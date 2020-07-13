@@ -33,9 +33,9 @@ from lib.utils import logger_util
 
 # pylint: disable=unused-variable
 __author__ = "Mike Pawlowski"
-__copyright__ = "Copyright IBM Corporation 2020. All Rights Reserved."
-__license__ = "IBM"
-__version__ = "1.0.0"
+__copyright__ = "Copyright 2020 Mike Pawlowski."
+__license__ = "Apache 2.0"
+__version__ = "1.0.1"
 __maintainer__ = "Mike Pawlowski"
 __email__ = "TODO"
 __status__ = "Production"
@@ -49,6 +49,10 @@ ARGUMENT_PARSER_DESCRIPTION = \
     "A Python application that searches for code in GitHub repositories based on a user-defined queries."
 
 ARGUMENT_PARSER_EPILOG = \
+    "=== Documentation ===\n" \
+    "\n" \
+    "https://docs.github.com/en/github/searching-for-information-on-github/searching-code\n" \
+    "\n" \
     "=== Environment Variables ===\n" \
     "\n" \
     "GITHUB_ACCESS_TOKEN : A personal access token with the \"repo\" scope selected.\n" \
@@ -57,8 +61,10 @@ ARGUMENT_PARSER_EPILOG = \
     "\n" \
     "export GITHUB_ACCESS_TOKEN=cabfe35410755fbb6c281e92902ed122144886c5\n" \
     "\n" \
-    "python index.py " \
-    "-q \"org:dap path:/ filename:package.json lodash\"" \
+    "python index.py -q \"org:dap path:/ filename:package.json request\"\n" \
+    "python index.py -q \"org:dap filename:deploy.properties k8s_yp_prod_eu_de_STAGE\"\n" \
+    "python index.py -q \"org:dap org:data-platform path:/ filename:package.json lodash\"\n" \
+    "\n" \
     "\n"
 
 DEFAULT_LOGGER = logging.getLogger("index")

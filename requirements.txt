@@ -16,8 +16,8 @@
 
 # Runtime Dependencies
 
-PyGithub == 1.43.8
+PyGithub == 1.51
 
 # Development Dependencies
 
-pylint == 2.4.4
+pylint == 2.5.3
